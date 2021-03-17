@@ -38,8 +38,7 @@ public class MainApp extends Application {
         UtilizatorPageService ups = new UtilizatorPageService(us, ps, ms, cs, cons, es);
         service = new SuperService(us, ps, cs, ms, cons, ups, es);
 
-        primaryStage.getIcons().add(new Image("file:///" + "D:\\Proiecte Git\\Proiecte\\socialnetwork\\src\\main" +
-                "\\resources\\images\\logo.png"));
+        primaryStage.getIcons().add(new Image(String.valueOf(MainApp.class.getResource("/images/logo.png"))));
         initView(primaryStage);
         primaryStage.show();
 

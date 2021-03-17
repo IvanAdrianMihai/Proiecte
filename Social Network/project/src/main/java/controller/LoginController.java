@@ -37,18 +37,12 @@ public class LoginController {
     Label labelShow;
     @FXML
     AnchorPane content;
-    @FXML
-    ImageView image;
 
     public void setService(SuperService service) {
         this.service = service;
         mail.setTooltip(forMail);
         parola.setTooltip(forPassowrd);
         login.setTooltip(forLogin);
-        image.setImage(new Image("file:///" + "C:\\Users\\Admin\\Desktop\\Semestrul I\\" +
-                "Metode avansate de programare\\Laborator\\Proiect Extins\\proiect\\src\\main\\" +
-                "resources\\images\\earth2.gif"));
-        image.setPreserveRatio(true);
     }
 
     public void changeShow(MouseEvent mouseEvent) {
