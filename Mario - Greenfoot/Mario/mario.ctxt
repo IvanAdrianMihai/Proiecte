@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=mario
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ mario\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ fall()
+comment3.params=
+comment3.target=boolean\ loveste()
+comment4.params=
+comment4.target=void\ limite()
+comment5.params=
+comment5.target=void\ atinge()
+numComments=6

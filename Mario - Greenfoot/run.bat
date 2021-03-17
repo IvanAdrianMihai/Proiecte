@@ -1,0 +1,1 @@
+"C:\Program Files\Java\openlogic-openjdk-8u262-b10-win-64\bin\java.exe" -jar "C:\Users\Admin\Desktop\Atestat - Super Mario\Mario.jar"
