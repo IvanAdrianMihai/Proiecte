@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="402.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EvenimenteController">
+    <children>
+        <TabPane fx:id="myPane" prefHeight="402.0" prefWidth="472.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Evenimente">
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" height="391.0" stroke="BLACK" strokeType="INSIDE" width="490.0">
+                                <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                        <stops>
+                                            <Stop color="#30a005" />
+                                            <Stop color="WHITE" offset="1.0" />
+                                        </stops>
+                                    </LinearGradient>
+                                </fill>
+                            </Rectangle>
+                            <TableView fx:id="publiceTable" layoutX="29.0" layoutY="51.0" prefHeight="218.0" prefWidth="413.0" stylesheets="/css/tableview2.css">
+                                <placeholder>
+                                    <Label text="Nu exista momentan un eveniment nou" />
+                                </placeholder>
+                                <columns>
+                                    <TableColumn fx:id="gazdaPublic" prefWidth="114.39996337890625" text="Gazda" />
+                                    <TableColumn fx:id="datePublic" prefWidth="121.60003662109375" text="Data" />
+                                    <TableColumn fx:id="denumirePublic" prefWidth="176.79998779296875" text="Denumire" />
+                                </columns>
+                            </TableView>
+                            <Label layoutX="14.0" layoutY="342.0" text="Nota: Pentru a vedea detalii despre eveniment, dublu click pe evenimentul dorit" textFill="#0d2757" underline="true">
+                                <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                </font>
+                            </Label>
+                            <Button layoutX="176.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#backPublic" stylesheets="/css/style3.css" text="🢀" />
+                            <Button layoutX="262.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#nextPublic" stylesheets="/css/style3.css" text="🢂" />
+                            <Label fx:id="p1" layoutX="232.0" layoutY="283.0" stylesheets="/css/style3.css" text="1" />
+                        </children>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Evenimente la care particip">
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" height="391.0" stroke="BLACK" strokeType="INSIDE" width="490.0">
+                                <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                        <stops>
+                                            <Stop color="#30a005" />
+                                            <Stop color="WHITE" offset="1.0" />
+                                        </stops>
+                                    </LinearGradient>
+                                </fill>
+                            </Rectangle>
+                            <TableView fx:id="participTable" layoutX="26.0" layoutY="57.0" prefHeight="222.0" prefWidth="419.0" stylesheets="/css/tableview2.css">
+                                <placeholder>
+                                    <Label text="Nu participati momentan la niciun eveniment" />
+                                </placeholder>
+                                <columns>
+                                    <TableColumn fx:id="dateParticip" prefWidth="96.79998779296875" text="Data" />
+                                    <TableColumn fx:id="gazdaParticip" prefWidth="85.60003662109375" text="Gazda" />
+                                    <TableColumn fx:id="denumireParticip" prefWidth="152.0" text="Denumire" />
+                                    <TableColumn fx:id="statusParticip" prefWidth="88.0" text="Status" />
+                                </columns>
+                            </TableView>
+                            <Label layoutX="14.0" layoutY="340.0" text="Nota: Pentru a vedea detalii despre eveniment, dublu click pe evenimentul dorit" textFill="#0d2757" underline="true">
+                                <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                </font>
+                            </Label>
+                            <Button layoutX="176.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#backParticipare" stylesheets="/css/style3.css" text="🢀" />
+                            <Button layoutX="266.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#nextParticipare" stylesheets="/css/style3.css" text="🢂" />
+                            <Label fx:id="p2" layoutX="232.0" layoutY="293.0" stylesheets="/css/style3.css" text="1" />
+                        </children>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Evenimentele mele">
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" height="391.0" stroke="BLACK" strokeType="INSIDE" width="490.0">
+                                <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                        <stops>
+                                            <Stop color="#30a005" />
+                                            <Stop color="WHITE" offset="1.0" />
+                                        </stops>
+                                    </LinearGradient>
+                                </fill>
+                            </Rectangle>
+                            <TableView fx:id="creatTable" layoutX="29.0" layoutY="53.0" prefHeight="218.0" prefWidth="414.0" stylesheets="/css/tableview2.css">
+                                <placeholder>
+                                    <Label text="Nu ati creat niciun eveniment" />
+                                </placeholder>
+                                <columns>
+                                    <TableColumn fx:id="dateCreate" prefWidth="75.0" text="Data" />
+                                    <TableColumn fx:id="denumireCreate" prefWidth="90.4000244140625" text="Denumire" />
+                                    <TableColumn fx:id="descriereCreate" prefWidth="152.79998779296875" text="Descriere" />
+                                    <TableColumn fx:id="statusCreate" prefWidth="95.20001220703125" text="Status" />
+                                </columns>
+                            </TableView>
+                            <Label layoutX="14.0" layoutY="340.0" text="Nota: Pentru a vedea detalii despre eveniment, dublu click pe evenimentul dorit" textFill="#0d2757" underline="true">
+                                <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                </font>
+                            </Label>
+                            <Button layoutX="181.0" layoutY="287.0" mnemonicParsing="false" onMouseClicked="#backCreate" stylesheets="/css/style3.css" text="🢀" />
+                            <Button layoutX="260.0" layoutY="287.0" mnemonicParsing="false" onMouseClicked="#nextCreate" stylesheets="/css/style3.css" text="🢂" />
+                            <Label fx:id="p3" layoutX="232.0" layoutY="291.0" stylesheets="/css/style3.css" text="1" />
+                     <CheckBox fx:id="seeAll" layoutX="29.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#clickIt" text="Vezi toate evenimentele create de tine" textFill="#0d2757">
+                        <font>
+                           <Font name="System Bold Italic" size="12.0" />
+                        </font>
+                     </CheckBox>
+                        </children>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Creaza eveniment">
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" height="391.0" stroke="BLACK" strokeType="INSIDE" width="490.0">
+                                <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                        <stops>
+                                            <Stop color="#30a005" />
+                                            <Stop color="WHITE" offset="1.0" />
+                                        </stops>
+                                    </LinearGradient>
+                                </fill>
+                            </Rectangle>
+                            <Label layoutX="14.0" layoutY="72.0" stylesheets="/css/style3.css" text="Data evenimentului:">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font></Label>
+                            <DatePicker fx:id="dataEveniment" layoutX="130.0" layoutY="68.0" stylesheets="/css/style3.css" />
+                            <Label layoutX="14.0" layoutY="110.0" stylesheets="/css/style3.css" text="Denumirea evenimentului:">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font></Label>
+                            <TextField fx:id="denumire" layoutX="164.0" layoutY="105.0" prefHeight="26.0" prefWidth="144.0" stylesheets="/css/style3.css" />
+                            <Label layoutX="14.0" layoutY="148.0" stylesheets="/css/style3.css" text="Descrierea evenimentului:">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font></Label>
+                            <TextArea fx:id="descriere" layoutX="14.0" layoutY="166.0" prefHeight="94.0" prefWidth="293.0" promptText="Scrieti aici descrierea ..." stylesheets="/css/style3.css" wrapText="true">
+                                <font>
+                                    <Font name="System Italic" size="12.0" />
+                                </font>
+                            </TextArea>
+                            <Button fx:id="creareEveniment" layoutX="12.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#createIt" stylesheets="/css/style3.css" text="Creare eveniment" />
+                            <Label layoutX="14.0" layoutY="14.0" stylesheets="/css/style3.css" text="Creaza un eveniment pentru comunitate!!!" textFill="#fbff00" underline="true">
+                                <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </AnchorPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

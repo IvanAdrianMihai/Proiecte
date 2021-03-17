@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewAccountController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="0.007633587786259542" />
+                  <Stop color="#30a005" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+        <Label layoutX="14.0" layoutY="14.0" stylesheets="/css/style3.css" text="Cont Nou" underline="true">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="42.0" text="Ne bucuram ca ai ales sa iti creezi un cont in aceasta aplicatie ">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="78.0" stylesheets="/css/style3.css" text="Nume:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="14.0" layoutY="115.0" stylesheets="/css/style3.css" text="Prenume:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="14.0" layoutY="152.0" stylesheets="/css/style3.css" text="Mail:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="14.0" layoutY="194.0" stylesheets="/css/style3.css" text="Parola:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="15.0" layoutY="260.0" stylesheets="/css/style3.css" text="Confirmare parola:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="nume" layoutX="57.0" layoutY="74.0" prefHeight="26.0" prefWidth="212.0" stylesheets="/css/style3.css" />
+        <TextField fx:id="prenume" layoutX="71.0" layoutY="111.0" prefHeight="26.0" prefWidth="197.0" stylesheets="/css/style3.css" />
+        <TextField fx:id="mail" layoutX="46.0" layoutY="148.0" prefHeight="26.0" prefWidth="222.0" stylesheets="/css/style3.css" />
+        <PasswordField fx:id="parola" layoutX="57.0" layoutY="190.0" onKeyTyped="#typedSomething1" prefHeight="26.0" prefWidth="212.0" stylesheets="/css/style3.css" />
+        <PasswordField fx:id="cparola" layoutX="123.0" layoutY="256.0" onKeyTyped="#typedSomething2" prefHeight="26.0" prefWidth="147.0" stylesheets="/css/style3.css" />
+        <Label fx:id="show1" layoutX="57.0" layoutY="174.0">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="show2" layoutX="125.0" layoutY="240.0">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="check2" layoutX="276.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#showPassword2" text="Arata parola">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </CheckBox>
+        <Button fx:id="creare" layoutX="118.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#createIt" stylesheets="/css/style3.css" text="Creare cont" />
+        <Button fx:id="back" layoutX="13.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#backToLogin" stylesheets="/css/style3.css" text="Back" />
+        <CheckBox fx:id="check1" layoutX="276.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#showPassword1" text="Arata parola">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </CheckBox>
+      <Rectangle fx:id="sh1" arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="11.0" layoutX="71.0" layoutY="228.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="sh2" arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="11.0" layoutX="111.0" layoutY="228.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="sh3" arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="11.0" layoutX="151.0" layoutY="228.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Label fx:id="complexitate" layoutX="195.0" layoutY="225.0" text="Complexitate parola">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

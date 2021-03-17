@@ -1,0 +1,37 @@
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(#E5F32D, #356B1A);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-content-display: left;
+}
+.label {
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( gaussian , #1CFF00 , 0,0,0,1 );
+}
+
+.text-field{
+    -fx-background-color: #D8FAD3;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.text-area .content{
+    -fx-background-color: #d8fad3;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.date-picker .text-field {
+    -fx-control-inner-background: #D8FAD3 ;
+}
+
+.password-field{
+    -fx-background-color: #D8FAD3;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.table-row-cell:selected {
+    -fx-background-color:#e16b44 ;
+
+}
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="content" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserInterfaceController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="402.0" stroke="BLACK" strokeType="INSIDE" width="130.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="WHITE"/>
+                        <Stop color="#30a005" offset="0.9961832061068702"/>
+                        <Stop color="#30a005" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <AnchorPane fx:id="content1" layoutX="129.0" prefHeight="402.0" prefWidth="472.0">
+            <ImageView fitHeight="402.0" fitWidth="472.0" layoutX="0" layoutY="0" pickOnBounds="true"
+                       preserveRatio="false">
+                    <Image url="/images/line.gif"/>
+            </ImageView>
+        </AnchorPane>
+        <ImageView fx:id="image" fitHeight="44.0" fitWidth="44.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+        <Label fx:id="name" layoutX="14.0" layoutY="61.0" text="Name" wrapText="true" prefHeight="37.6"
+               prefWidth="118.4">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Button fx:id="logOut" layoutX="10.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#logoutOfThis"
+                text="Logout" stylesheets="/css/style3.css">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/images/door.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="profil" layoutX="5.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#profilShow"
+                prefWidth="120.0" text="            Profil" textAlignment="RIGHT" stylesheets="/css/style3.css">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/images/profile.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="5.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#openMesaje" prefWidth="120.0"
+                text="          Mesaje" stylesheets="/css/style3.css">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/images/message.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="5.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#openRapoarte" prefHeight="26.0"
+                prefWidth="120.0" text="        Rapoarte" textAlignment="CENTER" stylesheets="/css/style3.css">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/images/pdf.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="5.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#goToPrieteni" prefWidth="120.0"
+                text="        Prieteni" textAlignment="CENTER" stylesheets="/css/style3.css">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/images/friends.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="5.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#goToEvenimente" prefHeight="26.0"
+                prefWidth="120.0" text="   Evenimente" textAlignment="CENTER" stylesheets="/css/style3.css">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="/images/events.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

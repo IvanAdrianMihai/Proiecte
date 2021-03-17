@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="402.0" stroke="BLACK" strokeType="INSIDE" width="472.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#30a005" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="imagine" fitHeight="110.0" fitWidth="110.0" layoutX="352.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="incarca" layoutX="352.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#incarcaPoza" prefHeight="23.0" prefWidth="109.0" stylesheets="/css/style3.css" text="Incarca o poza noua" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="47.0" stylesheets="/css/style3.css" text="Nume:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="88.0" stylesheets="/css/style3.css" text="Prenume:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="129.0" stylesheets="/css/style3.css" text="Mail:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="sterge" layoutX="399.0" layoutY="370.0" onMouseClicked="#stergeCont" text="Sterge cont" textFill="#0d2757" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pveche" layoutX="17.0" layoutY="201.0" stylesheets="/css/style3.css" text="Parola veche:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="nume" layoutX="59.0" layoutY="43.0" onKeyTyped="#typed1" prefHeight="26.0" prefWidth="165.0" stylesheets="/css/style3.css" />
+      <TextField fx:id="prenume" layoutX="77.0" layoutY="84.0" onKeyTyped="#typed1" stylesheets="/css/style3.css" />
+      <TextField fx:id="mail" layoutX="51.0" layoutY="124.0" onKeyTyped="#typed1" prefHeight="26.0" prefWidth="174.0" stylesheets="/css/style3.css" />
+      <Label fx:id="show1" layoutX="103.0" layoutY="181.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <CheckBox fx:id="check1" layoutX="275.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#showPassword1" text="Afisaza parola">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="pnoua" layoutX="16.0" layoutY="244.0" stylesheets="/css/style3.css" text="Parola noua:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="show2" layoutX="92.0" layoutY="225.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <CheckBox fx:id="check2" layoutX="275.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#showPassword2" text="Afisaza parola">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <Rectangle fx:id="sh3" arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="11.0" layoutX="182.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="sh2" arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="11.0" layoutX="142.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="sh1" arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="11.0" layoutX="103.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Label fx:id="complexitate" layoutX="226.0" layoutY="273.0" text="Complexitate parola">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="show3" layoutX="118.0" layoutY="291.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pconfirma" layoutX="14.0" layoutY="310.0" stylesheets="/css/style3.css" text="Confirmare parola:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <CheckBox fx:id="check3" layoutX="275.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#showPassword3" text="Afisaza parola">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="editare" layoutX="12.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#salveazaModificarile" stylesheets="/css/style3.css" text="Salveaza modificari">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="afisare" layoutX="12.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#showIt" text="Reseteaza parola" textFill="#0d2757" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <PasswordField fx:id="veche" layoutX="103.0" layoutY="197.0" onKeyTyped="#scrie1" prefHeight="26.0" prefWidth="164.0" stylesheets="/css/style3.css" />
+      <PasswordField fx:id="noua" layoutX="92.0" layoutY="240.0" onKeyTyped="#scrie2" prefHeight="26.0" prefWidth="174.0" stylesheets="/css/style3.css" />
+      <PasswordField fx:id="confirma" layoutX="124.0" layoutY="306.0" onKeyTyped="#scrie3" prefHeight="26.0" prefWidth="142.0" stylesheets="/css/style3.css" />
+   </children>
+</AnchorPane>
