@@ -1,0 +1,34 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class PE5 here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class PE5 extends World
+{
+
+    /**
+     * Constructor for objects of class PE5.
+     * 
+     */
+    public PE5()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(783, 610
+        , 1); 
+        prepare();
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Vf27 vf27 = new Vf27();
+        addObject(vf27,740,566);
+        vf27.setLocation(736,565);
+    }
+}
