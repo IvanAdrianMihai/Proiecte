@@ -1,3 +1,0 @@
-1,mate,Popescu
-2,fizica,Enescu
-3,informatica,Sorescu

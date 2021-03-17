@@ -1,6 +1,0 @@
-1,Adi
-2,Teo
-3,Flavius
-647,Ioana
-945,Sergiu
-750,Sergiu
